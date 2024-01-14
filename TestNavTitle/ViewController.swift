@@ -44,8 +44,8 @@ class ViewController: UIViewController {
 	func changeTitle() {
 		let animation = CATransition()
 		animation.duration = 0.5
-		animation.type = kCATransitionPush
-		animation.subtype = kCATransitionFromTop
+        animation.type = CATransitionType.push
+        animation.subtype = CATransitionSubtype.fromTop
 		
 //		navigationController?.navigationBar.layer.add(animation, forKey: "changeTitle")
 		headerView?.layer.add(animation, forKey: "changeTitle")
